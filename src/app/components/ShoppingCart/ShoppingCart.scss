@@ -1,0 +1,131 @@
+.shopping-cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 100vh;
+    color: #fff;
+    background-color: #0F52BA;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.img-closed {
+    cursor: pointer;
+}
+
+.card {
+    width: 95%;
+    height: 95px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    background-color: #fff;
+    margin: 20px 0 20px 0;
+}
+
+.close-icon {
+    position: relative;
+    top: -130px;
+    right: -460px;
+    width: 20px;
+    height: 20px;
+}
+
+.card-name {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.button-span {
+    border: 1px solid #BFBFBF;
+    padding: 5px 5px;
+    border-radius: 8px;
+
+    button {
+        background-color: transparent;
+        border: 1px solid #BFBFBF;
+        cursor: pointer;
+    }
+
+    span {
+        margin: 2px;
+    }
+}
+
+.price {
+    font-weight: 700;
+    color: #000;
+    margin-right: 5px;
+}
+
+.total-wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 130px;
+    left: 20px;
+    width: calc(100% - 40px);
+}
+
+.button-finish {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    width: 100%;
+    height: 97px;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    background-color: #000;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .close-icon {
+        right: -460px;
+    }
+
+    .card {
+        margin: 20px 0 20px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .shopping-cart {
+        width: 400px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .close-icon {
+        right: -380px;
+    }
+}
+
+@media screen and (max-width: 436px) {
+    .shopping-cart {
+        width: 350px;
+    }
+
+    .close-icon {
+        right: -330px;
+    }
+}
